@@ -1,0 +1,48 @@
+<meta charset = "UTF-8">
+
+<h1>Loteria  </h1>
+
+<script>
+	
+	 function saltarlinea(){
+		 
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	 }
+	 
+	 function imprimir(frase){
+		 
+		document.write(frase);
+		saltarlinea()
+	 }
+
+     function sorteo(n){
+        numero = Math.round(Math.random()*n);
+        return numero;
+     }
+	 
+     var n = parseInt(prompt("Digite un numero"));
+     
+
+     var numeroPensado = sorteo(n);
+     var numeroInformado = parseInt(prompt("Digite un numero de loteria entre 0 y " + n));
+
+     if (numeroInformado == numeroPensado){
+        imprimir("Felicitaciones, eres un genio");
+     }
+     else{
+        if (numeroInformado > numeroPensado){
+            imprimir("Lo siento, tu numero era mayor que el de la loteria");
+            imprimir("El numero de la loteria era "+ numeroPensado);
+        }
+
+        if (numeroInformado < numeroPensado){
+            imprimir("Lo siento, tu numero era menor que el de la loteria");
+            imprimir("El numero de la loteria era "+ numeroPensado);
+
+        }
+        
+     }
+ 
+</script>

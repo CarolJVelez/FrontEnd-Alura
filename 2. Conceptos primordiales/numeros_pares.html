@@ -1,0 +1,36 @@
+<meta charset = "UTF-8">
+
+<h1>Numeros pares  </h1>
+
+<script>
+	
+	 function saltarlinea(){
+		 
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	 }
+	 
+	 function imprimir(frase){
+		 
+		document.write(frase);
+		saltarlinea()
+	 }
+
+     function sorteo(n){
+        numero = Math.round(Math.random()*n);
+        return numero;
+     }
+	 
+    var contador =0;
+    var numero = 100;
+
+    while (contador <= numero ){
+
+        imprimir(contador);
+        contador = contador + 2;
+    }
+    
+    imprimir("fin");
+ 
+</script>

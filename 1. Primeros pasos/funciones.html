@@ -1,0 +1,42 @@
+<meta charset = "UTF-8">
+
+<h1>Bienvenido</h1>
+
+<script>
+
+
+	function mostrarAlerta(mensaje) {
+        alert("***" + mensaje + "***");
+    }
+	
+	 function saltarlinea(){
+		 
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	 }
+	 
+	 function imprimir(frase){
+		 
+		document.write(frase);
+		saltarlinea()
+	 }
+	 
+	 imprimir("Hola Carol");
+	 	 
+	 var edadCarol = 26;
+	 var edadOmar = 15;
+	 
+	 
+	 imprimir("La edad de Carol es: " + edadCarol + " años")
+	 
+	 imprimir("La edad de Omar es: " + edadOmar + " años")
+	 
+	 var diferencia = edadCarol-edadOmar;
+	 
+	 imprimir("La diferencia de edades entre nosotros es " + diferencia + " años");
+	 
+	 mostrarAlerta("La diferencia de edades entre nosotros es " + diferencia + " años");
+	
+	 
+</script>

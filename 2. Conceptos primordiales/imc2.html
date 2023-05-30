@@ -1,0 +1,57 @@
+<meta charset = "UTF-8">
+
+<h1>Calculo del IMC </h1>
+
+<script>
+	
+	 function saltarlinea(){
+		 
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	 }
+	 
+	 function imprimir(frase){
+		 
+		document.write(frase);
+		saltarlinea()
+	 }
+	 
+	 function calcularImc4(peso, altura){
+		
+		imc = peso /(altura * altura);
+		return imc;
+	 }
+	 
+	 //var imcCarol2 = calcularImc3(75,1.60);
+	// imprimir("El imc calculado de Carol es " +  imcCarol2);
+	 
+	 nombre = prompt ("Informe su nombre");
+	 peroInformado = prompt (nombre + ", Informe su peso");
+	 aluraInformado = prompt (nombre + ", Informe su altura");
+	 
+	 var imcInformado = calcularImc4 (peroInformado, aluraInformado);
+	 
+	 imprimir(nombre + ", El imc calculado es " +  imcInformado);
+
+     if (imcInformado <= 18.5){
+        imprimir("Tiene insuficiencia ponderal");
+     }
+
+     else if(imcInformado > 18.5 && imcInformado < 24.9 ){
+        imprimir("Tiene un intervalo normal");
+     }
+
+     else if(imcInformado >= 25.0){
+        imprimir("Tiene sobrepeso");
+     }
+
+     else if(imcInformado > 25.0 && imcInformado < 29.9){
+      imprimir("Tiene preobesidad")
+     }
+
+     else if(imcInformado >= 30){
+        imprimir("Tiene Obesidad");
+     }
+ 
+</script>

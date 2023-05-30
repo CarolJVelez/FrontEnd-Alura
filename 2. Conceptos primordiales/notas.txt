@@ -1,0 +1,31 @@
+conceptos primordiales 
+convertir de un string a un numero  
+      var victorias = parseInt (prompt("Digite los partidos ganados")); el parseInt 
+
+condicionales If 
+ if(puntosTotal > puntosPasados){
+        imprimir("El equipo esta mejor que el año pasado")
+      }
+
+      if(puntosTotal < puntosPasados){
+        imprimir("El equipo esta peor que el año pasado")
+      }
+
+      if(puntosTotal == puntosPasados){
+        imprimir("El equipo esta igual que el año pasado")
+      }
+
+condicional diferente != 
+
+colocar un valor variable = Math.random() esta funcion me da numero decimales, 2.9779 o 8.07997.... y siempre vaores entre 0 y 1, 
+por ende lo multiplico por 10 para poder tener numeros entre 0 y 10....seguido, para redondearlo, hacemos el Math.round asi=
+
+var numeroPensado = Math.round(Math.random()*10);
+
+
+como pasar un caracter a minuscula y que la lea siempre 
+tineLicencia.toLowerCase()=="n"-------- la funcion lower me pasa el caractar que traiga la variable licencia y me la pasa a minuscula y la compara con la n çç
+
+ciclo while y for 
+
+

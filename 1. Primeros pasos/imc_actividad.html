@@ -1,0 +1,79 @@
+<meta charset = "UTF-8">
+
+<h1>Calculo del IMC </h1>
+
+<script>
+	
+	 function saltarlinea(){
+		 
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	 }
+	 
+	 function imprimir(frase){
+		 
+		document.write(frase);
+		saltarlinea()
+	 }
+	 
+	 //Forma larga
+	 
+	 function calcularImc(peso, altura){
+		
+		imc = peso /(altura * altura);
+		return (imc);
+	 }
+	 
+	 imprimir("Hola Carol tu informacion");
+	 	 
+	 var pesoCarol = 75;
+	 var alturaCarol = 1.60;
+	 
+	 var imcCarol = calcularImc(pesoCarol, alturaCarol);
+	 imprimir("El IMC de Carol es  " + imcCarol );
+	 
+	 //forma corta
+	 
+	 function calcularImc2(peso, altura, nombre){
+		
+		imc = peso /(altura * altura);
+		imprimir("El indice de masa corporal de " + nombre + " es " + imc);
+	 }
+	 
+	 calcularImc2(75,1.60, "CarolV");
+	 calcularImc2(78,1.70, "Paola");
+	 
+	 //Otra forma 
+	 function calcularImc3(peso, altura){
+		
+		imc = peso /(altura * altura);
+		return imc;
+	 }
+	 
+	 var imcCarol2 = calcularImc3(75,1.60, "CarolV");
+	 var imcPaola2= calcularImc3(78,1.70, "Paola");
+	 
+	 imprimir("El promdio de imc calculado entre Carol y Paola es " +  (imcCarol2 + imcPaola2)/2);
+	 
+	 //Interaccion con usuario
+	 function calcularImc4(peso, altura){
+		
+		imc = peso /(altura * altura);
+		return imc;
+	 }
+	 
+	 var imcCarol2 = calcularImc3(75,1.60);
+	 imprimir("El imc calculado de Carol es " +  imcCarol2);
+	 
+	 nombre = prompt ("Informe su nombre");
+	 peroInformado = prompt (nombre + ", Informe su peso");
+	 aluraInformado = prompt (nombre + ", Informe su altura");
+	 
+	 var imcInformado = calcularImc4 (peroInformado, aluraInformado);
+	 
+	 imprimir(nombre + ", El imc calculado es " +  imcInformado);
+	 
+	
+	 
+</script>
